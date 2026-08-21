@@ -1,0 +1,88 @@
+P4 NDCH ANALYSIS REPORT
+======================
+
+Input alignment: sim.fa
+Input tree:      tree.nwk
+Requested model: JC
+Log likelihood:  -306.4194838922
+Optimizer:       BOBYQA
+Refinement:      none
+Free parameters: 7
+Composition frequencies: independently optimized
+Requested paths: none
+Requested clades: C,D
+Unique component 2 branches: 2
+
+COMPOSITION OPTIMIZATION
+------------------------
+
+Component 1
+  free: 1
+  starting A C G T: 0.25 0.25 0.25 0.25
+  optimized A C G T: 0.0843766823823 0.220326618471 0.305132582594 0.390164116553
+  maximum absolute change: 0.165623317618
+
+Component 2
+  free: 1
+  starting A C G T: 0.4 0.1 0.1 0.4
+  optimized A C G T: 0.183341667984 0.107216328459 0.377462729722 0.331979273836
+  maximum absolute change: 0.277462729722
+
+RESOLVED COMPONENT 2 PATHS
+--------------------------
+
+none
+
+RESOLVED COMPONENT 2 CLADES
+---------------------------
+
+Clade: C,D
+  LCA: node_0
+  LCA descendants: A,B,C,D
+    1. node_0 -> C; descendants=C
+    2. node_0 -> D; descendants=D
+
+SUBSTITUTION PROCESS
+--------------------
+
+Rate matrix specification: ones
+Rate matrix free: 0
+Rate values: 0.166666666667 0.166666666667 0.166666666667 0.166666666667 0.166666666667 0.166666666667
+Invariant proportion: 0; free=0
+Gamma categories: 4
+Gamma alpha: 1.27650283631; free=1
+Gamma rates: 0.188643743912 0.546569911754 1.03407275152 2.23071359281
+
+Q MATRICES
+----------
+
+Component 1; rows/columns A C G T
+  A   -1.30989931   0.31520133   0.43652554   0.55817245
+  C    0.12071007  -1.11540805   0.43652554   0.55817245
+  G    0.12071007   0.31520133  -0.99408385   0.55817245
+  T    0.12071007   0.31520133   0.43652554  -0.87243694
+
+Component 2; rows/columns A C G T
+  A   -1.16299607   0.15268585   0.53754141   0.47276881
+  C    0.26109528  -1.27140551   0.53754141   0.47276881
+  G    0.26109528   0.15268585  -0.88654995   0.47276881
+  T    0.26109528   0.15268585   0.53754141  -0.95132254
+
+MAXIMUM-LIKELIHOOD TREE
+-----------------------
+
+Optimized branch lengths:
+((A:0.135758, B:0.105482):0.0593639, C:0.113316, D:0.0975015);
+
+Components encoded as branch lengths:
+((A:1, B:1):1, C:2, D:2);
+
+BRANCH COMPONENT ASSIGNMENTS
+----------------------------
+
+parent -> child  component  length  descendant_taxa  selected_by
+node_0 -> node_1  1  0.0593638613443  A,B  background
+node_1 -> A  1  0.135758454154  A  background
+node_1 -> B  1  0.105481855473  B  background
+node_0 -> C  2  0.113315535396  C  clade 'C,D'
+node_0 -> D  2  0.0975015454451  D  clade 'C,D'

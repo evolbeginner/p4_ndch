@@ -1,0 +1,264 @@
+{
+  "logL": -306.4194838922041,
+  "input": {
+    "alignment": "sim.fa",
+    "tree": "tree.nwk"
+  },
+  "output_prefix": "JC",
+  "requested_comp_2_paths": [],
+  "requested_comp_2_branches": [],
+  "requested_comp_2_clades": [
+    "C,D"
+  ],
+  "number_of_unique_comp_2_branches": 2,
+  "composition_optimization": {
+    "equal_frequencies_fixed": false,
+    "frequencies_optimized": true,
+    "optimizer": "BOBYQA",
+    "refined_with_newtAndBrentPowell": false,
+    "p4_number_of_free_model_parameters": 7
+  },
+  "resolved_comp_2_paths": [],
+  "resolved_comp_2_clades": [
+    {
+      "specification": "C,D",
+      "taxa": [
+        "C",
+        "D"
+      ],
+      "lca": "node_0",
+      "lca_descendant_taxa": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "number_of_branches": 2,
+      "branches": [
+        {
+          "parent": "node_0",
+          "child": "C",
+          "node_number": 4,
+          "descendant_taxa": [
+            "C"
+          ]
+        },
+        {
+          "parent": "node_0",
+          "child": "D",
+          "node_number": 5,
+          "descendant_taxa": [
+            "D"
+          ]
+        }
+      ]
+    }
+  ],
+  "substitution_model": {
+    "name": "JC",
+    "requested_name": "JC+G",
+    "base_model": "JC",
+    "iqtree_rate_code": "000000",
+    "rate_mode": "gamma",
+    "equal_frequencies_in_iqtree": true,
+    "ndch_frequencies_optimized": true,
+    "equal_comp_frequencies_fixed": false,
+    "invariant_sites": {
+      "proportion": 0.0,
+      "free": 0
+    },
+    "r_matrix": 0,
+    "spec": "ones",
+    "free": 0,
+    "parameter_names": [
+      "AC",
+      "AG",
+      "AT",
+      "CG",
+      "CT",
+      "GT"
+    ],
+    "values": [
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666
+    ],
+    "gamma": {
+      "n_categories": 4,
+      "alpha": 1.2765028363132387,
+      "free": 1,
+      "category_frequencies": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "category_rates": [
+        0.1886437439118873,
+        0.5465699117535049,
+        1.0340727515230594,
+        2.2307135928115485
+      ]
+    }
+  },
+  "q_state_order": [
+    "A",
+    "C",
+    "G",
+    "T"
+  ],
+  "compositions": {
+    "1": {
+      "free": 1,
+      "starting_values": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "optimized_values": [
+        0.08437668238234523,
+        0.22032661847108445,
+        0.3051325825938028,
+        0.39016411655276745
+      ],
+      "maximum_absolute_change": 0.16562331761765475
+    },
+    "2": {
+      "free": 1,
+      "starting_values": [
+        0.4,
+        0.1,
+        0.1,
+        0.4
+      ],
+      "optimized_values": [
+        0.18334166798361792,
+        0.10721632845866179,
+        0.3774627297215432,
+        0.33197927383617704
+      ],
+      "maximum_absolute_change": 0.2774627297215432
+    }
+  },
+  "q_matrices": {
+    "1": [
+      [
+        -1.3098993076236016,
+        0.31520132726331324,
+        0.43652553509993425,
+        0.5581724452603541
+      ],
+      [
+        0.12071007335176177,
+        -1.11540805371205,
+        0.43652553509993425,
+        0.5581724452603541
+      ],
+      [
+        0.12071007335176177,
+        0.31520132726331324,
+        -0.9940838458754292,
+        0.5581724452603541
+      ],
+      [
+        0.12071007335176177,
+        0.31520132726331324,
+        0.43652553509993425,
+        -0.8724369357150092
+      ]
+    ],
+    "2": [
+      [
+        -1.1629960722260384,
+        0.15268584668455837,
+        0.5375414109765888,
+        0.47276881456489134
+      ],
+      [
+        0.26109528474882543,
+        -1.2714055102903055,
+        0.5375414109765888,
+        0.47276881456489134
+      ],
+      [
+        0.26109528474882543,
+        0.15268584668455837,
+        -0.8865499459982751,
+        0.47276881456489134
+      ],
+      [
+        0.26109528474882543,
+        0.15268584668455837,
+        0.5375414109765888,
+        -0.9513225424099726
+      ]
+    ]
+  },
+  "branches": {
+    "node_1": {
+      "node_number": 1,
+      "parent": "node_0",
+      "length": 0.05936386134428758,
+      "comp": 1,
+      "descendant_taxa": [
+        "A",
+        "B"
+      ],
+      "selection_sources": []
+    },
+    "A": {
+      "node_number": 2,
+      "parent": "node_1",
+      "length": 0.1357584541538621,
+      "comp": 1,
+      "descendant_taxa": [
+        "A"
+      ],
+      "selection_sources": []
+    },
+    "B": {
+      "node_number": 3,
+      "parent": "node_1",
+      "length": 0.10548185547299853,
+      "comp": 1,
+      "descendant_taxa": [
+        "B"
+      ],
+      "selection_sources": []
+    },
+    "C": {
+      "node_number": 4,
+      "parent": "node_0",
+      "length": 0.11331553539646698,
+      "comp": 2,
+      "descendant_taxa": [
+        "C"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "C,D"
+        }
+      ]
+    },
+    "D": {
+      "node_number": 5,
+      "parent": "node_0",
+      "length": 0.09750154544513806,
+      "comp": 2,
+      "descendant_taxa": [
+        "D"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "C,D"
+        }
+      ]
+    }
+  }
+}

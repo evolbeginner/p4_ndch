@@ -13,7 +13,7 @@ Component numbers in the output start at **1**:
 The default input files are `alignment.nex` and `tree.nwk`:
 
 ```bash
-python run_unrooted_ndch.py -m F81 --comp_clade "CD,AB" --pre JC
+python run_unrooted_ndch.py -m F81 --comp_clade "C,D;A,B" --pre JC
 ```
 
 Use different input files with `-s/--alignment` and `-t/--tree`:
@@ -23,7 +23,7 @@ python run_unrooted_ndch.py \
   -m GTR+G \
   --alignment my_alignment.nex \
   --tree my_tree.nwk \
-  --comp_clade "AB" \
+  --comp_clade "A,B" \
   --pre my_run
 ```
 
@@ -34,19 +34,20 @@ The script is designed for taxa named `A`, `B`, `C`, and `D`.
 Use `--comp` for explicit branch specifications:
 
 ```bash
-python run_unrooted_ndch.py --comp "AB|CD,AB|B"
+python run_unrooted_ndch.py --comp "A,B|C,D;A,B|B"
 ```
 
 Use `--comp_clade` to assign Component 2 to all branches inside one or more
-clades. The branch connecting a clade to the rest of the tree is excluded:
+clades. Each clade is given as comma-separated tip names. The branch
+connecting a clade to the rest of the tree is excluded:
 
 ```bash
-python run_unrooted_ndch.py --comp_clade "AB"
-python run_unrooted_ndch.py --comp_clade "AB,CD"
+python run_unrooted_ndch.py --comp_clade "A,B"
+python run_unrooted_ndch.py --comp_clade "A,B;C,D"
 ```
 
-For `--comp_clade "AB,CD"`, the four terminal branches receive Component 2,
-while the internal branch connecting the AB and CD sides remains Component 1.
+For `--comp_clade "A,B;C,D"`, the four terminal branches receive Component 2,
+while the internal branch connecting the A,B and C,D sides remains Component 1.
 
 ## Output files
 
@@ -62,5 +63,5 @@ For a prefix `my_run`, the script writes:
 Add `--equal-comp-freq` to fix every component to A=C=G=T=0.25. Models use
 IQ-TREE notation, including modifiers such as `+I` and `+G`.
 
-The script requires a working p4 installation and the local
-`iqtree_models.py` module.
+The script requires a working p4 installation. Model parsing and
+configuration are provided by the local `iqtree_models.py` module.
