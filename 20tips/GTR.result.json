@@ -1,0 +1,689 @@
+{
+  "logL": -5487.432426062617,
+  "input": {
+    "alignment": "example-dna/sim/alignment/combined.fas",
+    "tree": "example-dna/ref.tre"
+  },
+  "output_prefix": "GTR",
+  "requested_comp_2_paths": [],
+  "requested_comp_2_branches": [],
+  "requested_comp_2_clades": [
+    "t1,t5"
+  ],
+  "number_of_unique_comp_2_branches": 6,
+  "composition_optimization": {
+    "equal_frequencies_fixed": false,
+    "frequencies_optimized": true,
+    "optimizer": "BOBYQA",
+    "refined_with_newtAndBrentPowell": true,
+    "p4_number_of_free_model_parameters": 12
+  },
+  "resolved_comp_2_paths": [],
+  "resolved_comp_2_clades": [
+    {
+      "specification": "t1,t5",
+      "taxa": [
+        "t1",
+        "t5"
+      ],
+      "lca": "node_12",
+      "lca_descendant_taxa": [
+        "t1",
+        "t12",
+        "t5",
+        "t9"
+      ],
+      "number_of_branches": 6,
+      "branches": [
+        {
+          "parent": "node_12",
+          "child": "node_13",
+          "node_number": 13,
+          "descendant_taxa": [
+            "t1",
+            "t12",
+            "t9"
+          ]
+        },
+        {
+          "parent": "node_13",
+          "child": "node_14",
+          "node_number": 14,
+          "descendant_taxa": [
+            "t1",
+            "t12"
+          ]
+        },
+        {
+          "parent": "node_14",
+          "child": "t1",
+          "node_number": 15,
+          "descendant_taxa": [
+            "t1"
+          ]
+        },
+        {
+          "parent": "node_14",
+          "child": "t12",
+          "node_number": 16,
+          "descendant_taxa": [
+            "t12"
+          ]
+        },
+        {
+          "parent": "node_13",
+          "child": "t9",
+          "node_number": 17,
+          "descendant_taxa": [
+            "t9"
+          ]
+        },
+        {
+          "parent": "node_12",
+          "child": "t5",
+          "node_number": 18,
+          "descendant_taxa": [
+            "t5"
+          ]
+        }
+      ]
+    }
+  ],
+  "substitution_model": {
+    "name": "GTR",
+    "requested_name": "GTR+G",
+    "base_model": "GTR",
+    "iqtree_rate_code": "012345",
+    "rate_mode": "gamma",
+    "equal_frequencies_in_iqtree": false,
+    "ndch_frequencies_optimized": true,
+    "equal_comp_frequencies_fixed": false,
+    "invariant_sites": {
+      "proportion": 0.0,
+      "free": 0
+    },
+    "r_matrix": 0,
+    "spec": "optimized",
+    "free": 1,
+    "parameter_names": [
+      "AC",
+      "AG",
+      "AT",
+      "CG",
+      "CT",
+      "GT"
+    ],
+    "values": [
+      0.16456832844087527,
+      0.1580584702842124,
+      0.1988798807434525,
+      0.1551850418767734,
+      0.16641243864054336,
+      0.15689584001414303
+    ],
+    "gamma": {
+      "n_categories": 4,
+      "alpha": 300.0,
+      "free": 1,
+      "category_frequencies": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "category_rates": [
+        0.927595926908353,
+        0.9803149495059337,
+        1.0177802521194041,
+        1.0743088714663092
+      ]
+    }
+  },
+  "q_state_order": [
+    "A",
+    "C",
+    "G",
+    "T"
+  ],
+  "compositions": {
+    "1": {
+      "free": 1,
+      "starting_values": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "optimized_values": [
+        0.3199599013499194,
+        0.28102411828759083,
+        0.1688548395155617,
+        0.23016114084692793
+      ],
+      "maximum_absolute_change": 0.08114516048443829
+    },
+    "2": {
+      "free": 1,
+      "starting_values": [
+        0.4,
+        0.1,
+        0.1,
+        0.4
+      ],
+      "optimized_values": [
+        0.3254527719129392,
+        0.3076380765559419,
+        0.1808698585080255,
+        0.18603929302309338
+      ],
+      "maximum_absolute_change": 0.21396070697690664
+    }
+  },
+  "q_matrices": {
+    "1": [
+      [
+        -0.9541472150636845,
+        0.3717184997231593,
+        0.2145139849334539,
+        0.36791473040707134
+      ],
+      [
+        0.42321995430886084,
+        -0.941686268998512,
+        0.21061422190909734,
+        0.3078520927805538
+      ],
+      [
+        0.4064785685408827,
+        0.3505240132923541,
+        -1.0472495915609656,
+        0.29024700972772893
+      ],
+      [
+        0.5114588866437659,
+        0.37588388125944366,
+        0.2129360849842238,
+        -1.1002788528874334
+      ]
+    ],
+    "2": [
+      [
+        -0.9485236204898523,
+        0.413211521818497,
+        0.23332971507295963,
+        0.30198238359839563
+      ],
+      [
+        0.43713976068154026,
+        -0.9189109531996194,
+        0.22908789095315946,
+        0.2526833015649195
+      ],
+      [
+        0.41984774669783653,
+        0.38965120400069414,
+        -1.0477320970933717,
+        0.23823314639484103
+      ],
+      [
+        0.5282808927830883,
+        0.4178418634475647,
+        0.23161341230751661,
+        -1.1777361685381695
+      ]
+    ]
+  },
+  "branches": {
+    "node_1": {
+      "node_number": 1,
+      "parent": "node_0",
+      "length": 0.07702806117381968,
+      "comp": 1,
+      "descendant_taxa": [
+        "t11",
+        "t19",
+        "t7"
+      ],
+      "selection_sources": []
+    },
+    "t7": {
+      "node_number": 2,
+      "parent": "node_1",
+      "length": 0.20816587606154477,
+      "comp": 1,
+      "descendant_taxa": [
+        "t7"
+      ],
+      "selection_sources": []
+    },
+    "node_3": {
+      "node_number": 3,
+      "parent": "node_1",
+      "length": 0.2504793911472738,
+      "comp": 1,
+      "descendant_taxa": [
+        "t11",
+        "t19"
+      ],
+      "selection_sources": []
+    },
+    "t19": {
+      "node_number": 4,
+      "parent": "node_3",
+      "length": 0.1351636223945239,
+      "comp": 1,
+      "descendant_taxa": [
+        "t19"
+      ],
+      "selection_sources": []
+    },
+    "t11": {
+      "node_number": 5,
+      "parent": "node_3",
+      "length": 0.04584345092172047,
+      "comp": 1,
+      "descendant_taxa": [
+        "t11"
+      ],
+      "selection_sources": []
+    },
+    "node_6": {
+      "node_number": 6,
+      "parent": "node_0",
+      "length": 0.11693070489801789,
+      "comp": 1,
+      "descendant_taxa": [
+        "t13",
+        "t18",
+        "t2"
+      ],
+      "selection_sources": []
+    },
+    "t2": {
+      "node_number": 7,
+      "parent": "node_6",
+      "length": 0.23400217019167494,
+      "comp": 1,
+      "descendant_taxa": [
+        "t2"
+      ],
+      "selection_sources": []
+    },
+    "node_8": {
+      "node_number": 8,
+      "parent": "node_6",
+      "length": 0.20858405327369833,
+      "comp": 1,
+      "descendant_taxa": [
+        "t13",
+        "t18"
+      ],
+      "selection_sources": []
+    },
+    "t13": {
+      "node_number": 9,
+      "parent": "node_8",
+      "length": 0.056845656302417495,
+      "comp": 1,
+      "descendant_taxa": [
+        "t13"
+      ],
+      "selection_sources": []
+    },
+    "t18": {
+      "node_number": 10,
+      "parent": "node_8",
+      "length": 0.03835522201602032,
+      "comp": 1,
+      "descendant_taxa": [
+        "t18"
+      ],
+      "selection_sources": []
+    },
+    "node_11": {
+      "node_number": 11,
+      "parent": "node_0",
+      "length": 0.13963621327615333,
+      "comp": 1,
+      "descendant_taxa": [
+        "t1",
+        "t10",
+        "t12",
+        "t14",
+        "t15",
+        "t16",
+        "t17",
+        "t20",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t8",
+        "t9"
+      ],
+      "selection_sources": []
+    },
+    "node_12": {
+      "node_number": 12,
+      "parent": "node_11",
+      "length": 0.07063980886048839,
+      "comp": 1,
+      "descendant_taxa": [
+        "t1",
+        "t12",
+        "t5",
+        "t9"
+      ],
+      "selection_sources": []
+    },
+    "node_13": {
+      "node_number": 13,
+      "parent": "node_12",
+      "length": 0.31606600983065286,
+      "comp": 2,
+      "descendant_taxa": [
+        "t1",
+        "t12",
+        "t9"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "t1,t5"
+        }
+      ]
+    },
+    "node_14": {
+      "node_number": 14,
+      "parent": "node_13",
+      "length": 0.10764432221082086,
+      "comp": 2,
+      "descendant_taxa": [
+        "t1",
+        "t12"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "t1,t5"
+        }
+      ]
+    },
+    "t1": {
+      "node_number": 15,
+      "parent": "node_14",
+      "length": 0.12636202460754525,
+      "comp": 2,
+      "descendant_taxa": [
+        "t1"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "t1,t5"
+        }
+      ]
+    },
+    "t12": {
+      "node_number": 16,
+      "parent": "node_14",
+      "length": 0.16062877341700035,
+      "comp": 2,
+      "descendant_taxa": [
+        "t12"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "t1,t5"
+        }
+      ]
+    },
+    "t9": {
+      "node_number": 17,
+      "parent": "node_13",
+      "length": 0.24805953385735427,
+      "comp": 2,
+      "descendant_taxa": [
+        "t9"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "t1,t5"
+        }
+      ]
+    },
+    "t5": {
+      "node_number": 18,
+      "parent": "node_12",
+      "length": 0.6166852388509767,
+      "comp": 2,
+      "descendant_taxa": [
+        "t5"
+      ],
+      "selection_sources": [
+        {
+          "type": "clade",
+          "specification": "t1,t5"
+        }
+      ]
+    },
+    "node_19": {
+      "node_number": 19,
+      "parent": "node_11",
+      "length": 0.001260794345335202,
+      "comp": 1,
+      "descendant_taxa": [
+        "t10",
+        "t14",
+        "t15",
+        "t16",
+        "t17",
+        "t20",
+        "t3",
+        "t4",
+        "t6",
+        "t8"
+      ],
+      "selection_sources": []
+    },
+    "node_20": {
+      "node_number": 20,
+      "parent": "node_19",
+      "length": 0.17006663448238488,
+      "comp": 1,
+      "descendant_taxa": [
+        "t10",
+        "t14",
+        "t17",
+        "t6"
+      ],
+      "selection_sources": []
+    },
+    "node_21": {
+      "node_number": 21,
+      "parent": "node_20",
+      "length": 0.08862463392980985,
+      "comp": 1,
+      "descendant_taxa": [
+        "t10",
+        "t14",
+        "t17"
+      ],
+      "selection_sources": []
+    },
+    "t17": {
+      "node_number": 22,
+      "parent": "node_21",
+      "length": 0.31452151911973375,
+      "comp": 1,
+      "descendant_taxa": [
+        "t17"
+      ],
+      "selection_sources": []
+    },
+    "node_23": {
+      "node_number": 23,
+      "parent": "node_21",
+      "length": 0.06240264374529564,
+      "comp": 1,
+      "descendant_taxa": [
+        "t10",
+        "t14"
+      ],
+      "selection_sources": []
+    },
+    "t14": {
+      "node_number": 24,
+      "parent": "node_23",
+      "length": 0.30333651050693927,
+      "comp": 1,
+      "descendant_taxa": [
+        "t14"
+      ],
+      "selection_sources": []
+    },
+    "t10": {
+      "node_number": 25,
+      "parent": "node_23",
+      "length": 0.3571664941068892,
+      "comp": 1,
+      "descendant_taxa": [
+        "t10"
+      ],
+      "selection_sources": []
+    },
+    "t6": {
+      "node_number": 26,
+      "parent": "node_20",
+      "length": 0.5290950106123037,
+      "comp": 1,
+      "descendant_taxa": [
+        "t6"
+      ],
+      "selection_sources": []
+    },
+    "node_27": {
+      "node_number": 27,
+      "parent": "node_19",
+      "length": 0.07804989389662165,
+      "comp": 1,
+      "descendant_taxa": [
+        "t15",
+        "t16",
+        "t20",
+        "t3",
+        "t4",
+        "t8"
+      ],
+      "selection_sources": []
+    },
+    "node_28": {
+      "node_number": 28,
+      "parent": "node_27",
+      "length": 0.06208490762505671,
+      "comp": 1,
+      "descendant_taxa": [
+        "t16",
+        "t20",
+        "t8"
+      ],
+      "selection_sources": []
+    },
+    "t20": {
+      "node_number": 29,
+      "parent": "node_28",
+      "length": 0.4124459661062897,
+      "comp": 1,
+      "descendant_taxa": [
+        "t20"
+      ],
+      "selection_sources": []
+    },
+    "node_30": {
+      "node_number": 30,
+      "parent": "node_28",
+      "length": 0.2745577352205543,
+      "comp": 1,
+      "descendant_taxa": [
+        "t16",
+        "t8"
+      ],
+      "selection_sources": []
+    },
+    "t16": {
+      "node_number": 31,
+      "parent": "node_30",
+      "length": 1e-08,
+      "comp": 1,
+      "descendant_taxa": [
+        "t16"
+      ],
+      "selection_sources": []
+    },
+    "t8": {
+      "node_number": 32,
+      "parent": "node_30",
+      "length": 0.010019973771044523,
+      "comp": 1,
+      "descendant_taxa": [
+        "t8"
+      ],
+      "selection_sources": []
+    },
+    "node_33": {
+      "node_number": 33,
+      "parent": "node_27",
+      "length": 0.10726152708841714,
+      "comp": 1,
+      "descendant_taxa": [
+        "t15",
+        "t3",
+        "t4"
+      ],
+      "selection_sources": []
+    },
+    "t15": {
+      "node_number": 34,
+      "parent": "node_33",
+      "length": 0.2856304607728729,
+      "comp": 1,
+      "descendant_taxa": [
+        "t15"
+      ],
+      "selection_sources": []
+    },
+    "node_35": {
+      "node_number": 35,
+      "parent": "node_33",
+      "length": 0.2689320059156994,
+      "comp": 1,
+      "descendant_taxa": [
+        "t3",
+        "t4"
+      ],
+      "selection_sources": []
+    },
+    "t3": {
+      "node_number": 36,
+      "parent": "node_35",
+      "length": 0.00031107020589843143,
+      "comp": 1,
+      "descendant_taxa": [
+        "t3"
+      ],
+      "selection_sources": []
+    },
+    "t4": {
+      "node_number": 37,
+      "parent": "node_35",
+      "length": 0.016534928085632138,
+      "comp": 1,
+      "descendant_taxa": [
+        "t4"
+      ],
+      "selection_sources": []
+    }
+  }
+}
